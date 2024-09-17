@@ -96,7 +96,7 @@ It is essential to import the matplotlib.pyplot library as it will be required f
 import mathplotlib.pyplot as plt
 ```
 
-Displaying different tracks, genders, and hometowns through bar graph for better interpretation of data with figure size modification settings. The average is going to be used as measurement for the comparison
+Displaying different tracks, genders, and hometowns through bar graph for better interpretation of data with figure size modification settings. The average is going to be used as measurement for the comparison. In addition, the boxplot graph is also going to be added for more emphasis
 
 **First: 3 Hometowns and their average**
 
@@ -109,6 +109,15 @@ The result will be displayed as:
 
 ![image](https://github.com/user-attachments/assets/f05331be-af1d-4d30-a54a-fd2782da6f93)
 
+```python
+boards.boxplot(column = 'Average', by = 'Hometown')
+```
+
+The result will be displayed as:
+
+![image](https://github.com/user-attachments/assets/46358d32-f7a3-468b-a7c8-d01f61a0fff7)
+
+
 It was shown that Luzon has the highest average grade with Mindanao being the lowest
 
 **Second: 3 Tracks and their average**
@@ -120,6 +129,15 @@ plt.bar(boards['Track'],boards['Average'])
 The result will be displayed as:
 
 ![image](https://github.com/user-attachments/assets/df40eb9a-1f63-4981-9fbd-16ca93af1a77)
+
+```python
+boards.boxplot(column = 'Average', by = 'Track')
+```
+
+The result will be displayed as:
+
+![image](https://github.com/user-attachments/assets/b53f5f25-1a7b-4a12-87ef-331abf755c90)
+
 
 It was shown that Microelectronics has the highest average grade with Instrumentation being the lowest
 
@@ -134,6 +152,15 @@ The result will be displayed as:
 
 ![image](https://github.com/user-attachments/assets/3ee54f22-05e9-471d-9e99-46abcd096c1b)
 
+```python
+boards.boxplot(column = 'Average', by = 'Gender')
+```
+
+The result will be displayed as:
+
+![image](https://github.com/user-attachments/assets/65084f9d-b644-4ed8-be72-a213cb088bf7)
+
+
 It was shown that Females perform well and has higher average grade than Males
 
 With these data wrangling and visualization, the students will be able to learn how to organize, visualize, and interpret data using python
@@ -143,6 +170,10 @@ With these data wrangling and visualization, the students will be able to learn 
 #### Section: 2ECE-A
 
 ## 🔑 Version History
+
+- 1.03
+  - Revised the supplemental files
+  - Updated the readme file
 
 - 1.02
   - Revised the supplemental files
